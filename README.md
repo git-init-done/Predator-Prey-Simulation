@@ -61,4 +61,4 @@ X	Doodlebug
 
 **4) Example Output: -**
 
-<img width="201" alt="image" src="https://github.com/user-attachments/assets/8cb487b1-3121-4ea4-b718-4daef4e1a890" />
+<img width="201" alt="Image" src="https://github.com/user-attachments/assets/40e2f9d8-08f0-420c-9f20-0e3427d3c391" />
