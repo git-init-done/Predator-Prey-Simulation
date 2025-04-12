@@ -42,6 +42,23 @@ Prepare for a battle of survival, reproduction, and starvation as nature unfolds
 
 ---
 
+## 🚀 Getting Started
+
+### 🛠 Requirements
+
+- Java Development Kit (JDK)
+
+### ⚙️ Compile & Run
+
+```bash
+javac simulation.java
+java simulation
+```
+
+> Runs a 20x20 world with 100 ants and 5 doodlebugs by default.
+
+---
+
 ## 📺 Sample Output
 
 ```
