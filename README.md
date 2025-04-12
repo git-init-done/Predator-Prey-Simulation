@@ -1,64 +1,78 @@
-# Predator-Prey-Simulation
-A Java-based simulation that models a simple predator-prey ecosystem on a 2D grid, featuring **Doodlebugs (X)** and **Ants (o)**. This project demonstrates core **Object-Oriented Programming (OOP)** principles and algorithmic behavior through dynamic interaction between species, governed by movement, breeding, and survival rules.
+
+# 🧬 Predator-Prey Simulation in Java
+
+Welcome to a dynamic, console-based **Predator-Prey Simulation** built with Java! This ecosystem simulation models the interaction between two species — **Ants (prey)** and **Doodlebugs (predators)** — evolving over time in a 2D grid environment.
+
+Prepare for a battle of survival, reproduction, and starvation as nature unfolds one turn at a time.
 
 ---
 
-**1) Features: -**
+## 🌟 Key Features
 
--> **Grid-Based Ecosystem:** Simulates a 20x20 environment populated with ants and doodlebugs.
-  
--> **Turn-Based Simulation:** Press Enter to advance simulation steps and observe ecosystem evolution.
-  
--> **Behavioral Rules: -**
-
-  - **Doodlebugs**:
-    
-    - Hunt adjacent ants and eat them.
-      
-    - Breed every 8 steps.
-      
-    - Starve and die if they don’t eat within 3 steps.
-      
-  - **Ants: -**
-    
-    - Move randomly to adjacent empty cells.
-      
-    - Breed every 3 steps if space is available.
-      
--> **Dynamic Equilibrium:** Populations shift over time, with random outcomes like extinction or dominance.
+- 🐜 **Ant Behavior** – Moves randomly, breeds every 3 steps  
+- 🕷️ **Doodlebug Behavior** – Hunts ants, breeds every 8 steps, starves after 3 turns without food  
+- 🧠 **Smart Movement Logic** – Each organism makes independent, rule-based decisions  
+- ♻️ **Ecosystem Equilibrium** – Watch population balances and survival dynamics in action  
+- 📉 **Real-Time Console Output** – Visualize evolving species in a character grid  
 
 ---
 
-**2) Concepts Demonstrated: -**
+## 🔍 How It Works
 
--> **Object-Oriented Programming (OOP): -**
-  
-  - Abstract `Organism` class with polymorphic behavior.
-    
-  - Inheritance for `Ant` and `Doodlebug` classes.
-    
-  - Encapsulation of movement, breeding, and starvation logic.
-    
--> **Simulation Logic: -**
+### 🧩 Organism Types
 
-  - Turn-based processing of species.
-    
-  - Randomized movement and breeding.
-    
-  - Grid-based state tracking and printing.
+- **Ant (`o`)**
+  - Moves to a random adjacent empty space
+  - Breeds every 3 steps if space permits
 
----
+- **Doodlebug (`X`)**
+  - Prioritizes adjacent ants to eat
+  - Breeds every 8 steps
+  - Dies (starves) after 3 steps without food
 
-**3) Grid Output Symbols: -**
+### 🎮 Simulation Loop
 
-.	Empty Cell
-
-o	Ant
-
-X	Doodlebug
+1. Grid is initialized with random ants and doodlebugs  
+2. Each time step:
+   - Doodlebugs move and attempt to eat
+   - Doodlebugs breed or die based on behavior rules
+   - Ants move and attempt to breed
+3. Console output shows the updated state
+4. Press Enter to advance the simulation
 
 ---
 
-**4) Example Output: -**
+## 📺 Sample Output
 
-<img width="201" alt="Image" src="https://github.com/user-attachments/assets/40e2f9d8-08f0-420c-9f20-0e3427d3c391" />
+```
+....................
+....o..o..X.o.o.o...
+...o.....o..o.X..o..
+....X..o.o..X.......
+...o....o......o....
+....................
+Press Enter to continue...
+```
+
+---
+
+## 🔮 Future Improvements
+
+- 📊 Add simulation statistics (population trends, extinction events)  
+- 🎨 GUI-based visualization for a richer experience  
+- 🧠 Smarter pathfinding using A* or greedy search  
+- 🌐 World wrapping (toroidal grid behavior)  
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License** — free to modify, expand, and experiment with. Contributions welcome!
+
+---
+
+## 🧩 Final Thoughts
+
+This simulation is a fun, hands-on exploration of natural selection, predator-prey dynamics, and autonomous agent behavior. Perfect for students, educators, or anyone interested in digital ecosystems.
+
+Let the wild run wild. 🌿🕷️🐜
